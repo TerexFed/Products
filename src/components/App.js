@@ -30,7 +30,7 @@ function App() {
   }
   function minusCount(id) {
     let changedCount = products.filter((el) =>
-      el.count === 0 ? removeProduct(id) : ((el.id === id) ? el.count-- : el.count)
+      ((el.id === id) ? el.count-- : el.count)
     )
     setProducts(changedCount)
   }
