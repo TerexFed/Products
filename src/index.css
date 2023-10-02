@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(214, 192, 165);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+    background-color: beige;
+    font-size: 30px;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.App > button {
+    margin: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ProductItem{
+    border: 3px solid black;
+    width: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.Counter{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size: 25px;
+}
+.Counter > button{
+    font-size: 40px;
+    margin: 15px;
+}
+
+
+
+
+@media (width < 770px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (width < 510px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
